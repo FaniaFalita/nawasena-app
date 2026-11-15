@@ -11,7 +11,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // Mengatur arah redirect otomatis Laravel 12
+        $middleware->redirectTo(
+            guests: '/masuk',          // Jika belum login tapi akses halaman steril, lempar ke sini
+            users: '/beranda'          // JIKA SUDAH LOGIN TAPI AKSES HALAMAN GUEST, LEMPAR KE BERANDA
+        );
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
