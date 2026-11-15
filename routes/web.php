@@ -8,7 +8,7 @@ use App\Http\Controllers\ConversationController;
 use App\Http\Controllers\CurhatController;
 
 // Halaman publik / Landing Page
-Route::view('/', 'landing')->name('landing');
+Route::view('/', 'welcome')->name('landing');
 
 // Rute khusus untuk user yang BELUM login (Guest)
 Route::middleware('guest')->group(function () {
