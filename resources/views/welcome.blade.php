@@ -7,10 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#FDFDFC] text-[#1b1b18] min-h-screen flex flex-col items-center justify-center p-6">
-    <main class="w-full max-w-2xl text-center bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[#19140015]">
+<body class="bg-[#FDFDFC] text-[#1b1b18] min-h-screen flex flex-col items-center justify-center p-6 font-['Plus_Jakarta_Sans',sans-serif]">
+    <main class="w-full max-w-2xl text-center bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-200">
         <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 text-2xl mb-6 shadow-inner">
             🌿
         </div>
